@@ -1,1 +1,120 @@
 /*Maak hier jouw CSS!*/
+
+.container {
+    display: grid;
+    color: white;
+    padding: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "."
+        "f";
+    row-gap: 16px;
+    margin: 10px;
+
+}
+
+.item {
+    background-color: rgb(186, 59, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#blok-a {
+    grid-area: a;
+}
+
+
+#blok-b {
+    grid-area: b;
+    padding: 20px;
+}
+
+
+#blok-c {
+    grid-area: c;
+}
+
+
+#blok-d {
+    grid-area: d;
+}
+
+
+#blok-e {
+    grid-area: e;
+}
+
+
+#blok-f {
+    grid-area: f;
+}
+
+
+
+@media (min-width: 992px) {
+
+    .container {
+        display: grid;
+        color: white;
+        padding: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 190px 100px auto 50px;
+        grid-template-areas:
+            "a c c"
+            "b c c"
+            "b e d"
+            "b e ."
+            "f f f";
+
+        row-gap: 16px;
+        column-gap: 16px;
+        margin: 10px;
+    }
+
+
+    .item {
+        background-color: rgb(186, 59, 70);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #blok-a {
+        grid-area: a;
+    }
+
+
+    #blok-b {
+        grid-area: b;
+        padding: 20px;
+    }
+
+
+    #blok-c {
+        grid-area: c;
+    }
+
+
+    #blok-d {
+        grid-area: d;
+    }
+
+
+    #blok-e {
+        grid-area: e;
+    }
+
+
+    #blok-f {
+        grid-area: f;
+    }
+}
